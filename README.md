@@ -1,2 +1,2 @@
 # pywebapp
-Demo project for a course.
+Demo app for a class project.
