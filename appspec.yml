@@ -1,0 +1,9 @@
+version: 0.1
+os: linux
+hooks:
+  BeforeInstall:
+    - location: appspec/stopcontainer.sh
+      timeout: 30
+  ApplicationStart:
+    - location: appspec/startcontainer.sh
+      timeout: 60
