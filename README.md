@@ -1,3 +1,4 @@
 # PyWebApp
-Demo app for a class project.
-* It will do something one of these days.
+Demo app for COMP4913
+* It doesn't do anything useful.
+* But it has tests, and responds to HTTP requests.
