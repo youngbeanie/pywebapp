@@ -1,9 +1,12 @@
-version: 0.1
+version: 0.0
 os: linux
 hooks:
-  BeforeInstall:
+  ApplicationStop:
     - location: appspec/stopcontainer.sh
-      timeout: 30
+      timeout: 60
+  BeforeInstall:
+    - location: appspec/registrylogin.sh
+      timeout: 60
   ApplicationStart:
     - location: appspec/startcontainer.sh
       timeout: 60
