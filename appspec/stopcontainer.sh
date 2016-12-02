@@ -1,2 +1,5 @@
 #!/bin/bash
-docker stop pywebapp || true
+docker stop pywebapp
+CID=$(docker ps -lq)
+[ -n "$CID" ] && docker rm $CID
+exit 0
