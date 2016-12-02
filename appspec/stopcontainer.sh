@@ -1,2 +1,2 @@
 #!/bin/bash
-docker stop pywebapp
+docker stop pywebapp || true
