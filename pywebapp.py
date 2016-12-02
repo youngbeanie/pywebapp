@@ -9,7 +9,17 @@ urls = ('/', 'Default',
 class Default:
     def GET(self):
         web.header('Content-Type', 'text/html')
-        return "<b>Hello COMP4913!</b>"
+        return """<html>
+        <title>PyWebApp</title>
+        <body>
+        <h1>Hello COMP4913!</h1>
+        <p>Available APIs</p>
+        <ul>
+        <li><a href="/api/v1/test">/api/v1/test</a></li>
+        <li><a href="/api/v1/json">/api/v1/json</a></li>
+        </ul>
+        </body>
+        </html>"""
 
 class Api:
     def GET(self, name):
