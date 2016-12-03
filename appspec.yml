@@ -4,9 +4,6 @@ hooks:
   ApplicationStop:
     - location: appspec/stopcontainer.sh
       timeout: 60
-  BeforeInstall:
-    - location: appspec/registrylogin.sh
-      timeout: 60
   ApplicationStart:
     - location: appspec/startcontainer.sh
       timeout: 60
