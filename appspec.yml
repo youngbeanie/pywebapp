@@ -6,4 +6,4 @@ hooks:
       timeout: 60
   ApplicationStart:
     - location: appspec/startcontainer.sh
-      timeout: 60
+      timeout: 600
