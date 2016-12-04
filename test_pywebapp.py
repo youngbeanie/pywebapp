@@ -16,3 +16,8 @@ def test_ApiJson():
     b.open('/api/v1/json')
     result = json.loads(b.get_text())
     assert result['api-version'] == 'v1'
+
+def test_ApiWorker():
+    b.open('/api/v1/worker')
+    result = json.loads(b.get_text())
+    assert 'worker-name' in result
