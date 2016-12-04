@@ -12,7 +12,7 @@ class Default:
         return """<html>
         <title>PyWebApp</title>
         <body>
-        <h1>Hello COMP4913!</h1>
+        <h1>Hello World!</h1>
         <p>Available APIs</p>
         <ul>
         <li><a href="/api/v1/test">/api/v1/test</a></li>
