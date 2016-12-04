@@ -6,7 +6,7 @@ b = app.browser()
 
 def test_Default():
     b.open('/')
-    assert 'Hello World' in b.get_text()
+    assert 'COMP4913' in b.get_text()
 
 def test_Api():
     b.open('/api/v1/test')
