@@ -6,7 +6,7 @@ b = app.browser()
 
 def test_Default():
     b.open('/')
-    assert 'bill' in b.get_text()
+    assert 'A01035840' in b.get_text()
 
 def test_Api():
     b.open('/api/v1/test')
